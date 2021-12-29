@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 在display布局中想要用第几个第几个，一定要确保里面的元素比较纯净 */
+        .prensert {
+            width: 500px;
+            height: 100px;
+            background-color: #f60;
+            display: flex;
+        }
+        .son {
+            width: 50px;
+            height: 40px;
+            background-color: aqua;
+            border: 2px solid #000;
+            margin-left: -2px;
+        }
+        .son:first-child {
+            /* 这样其实是选不中第一个孩子的，因为里面不纯净，第一个元素其实是grandson */
+            background-color: #fff;
+        }
+        .son:last-child {
+            /* 最后一个孩子去可以这样选 */
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="prensert">
+        <div class="grandson"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+        <div class="son"></div>
+    </div>
+</body>
+</html>
