@@ -7,8 +7,8 @@
     <title>Document</title>
      <style>
          .sanjiao {
-             width: 50px;
-             height: 50px;
+             width: 10px;
+             height: 10px;
              box-sizing: border-box;
              border-top:  20px solid red;
              border-left:  20px solid blue;
@@ -19,5 +19,16 @@
 </head>
 <body>
     <div class="sanjiao" title="我是kaifan"></div>
+    <!-- 三角形理解： 
+
+        先理解容器的border原理
+        在容器直角处，两个border其实是交汇在那里的
+
+        设置border的宽度，和容器的宽高 ，宽高小于border的总和，则以border的总和为主
+
+        如果设置的容器宽高大于boder的总和，多出的部分就是容器的内容区了
+
+        最好的就是宽高的总格等于border的总和
+     -->
 </body>
 </html>
