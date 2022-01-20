@@ -5,16 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      
+      li:nth-child(3) {
+        color: pink;
+      }
+      li:nth-child(2) {
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <!-- 
-  另外：nth-child(n+1)中，n的起始值是0
-同样的用法还有
-
-E F:nth-last-child(n) 选择元素E的倒数第n个子元素F
-
-E F:nth-of-type(n)选择父元素内具有指定类型的第n个E元素
-
-E F:nth-last-of-type(n)选择附远足内具有指定类型的倒数第n个E元素 -->
+    <!-- 理解nth-child伪类选择器 -->
+    <!-- :nth-child(n)
+    该选择器是找第三个li元素，如果该子元素为li，则其变为pink色，
+    如果，第三个子元素不是p元素，则没有子元素的背景变为pink色 -->
+     <ul>
+       <li>第1个li元素</li>
+       <li>第2个li元素</li> <!--变为red色-->
+       <div>89898</div>
+       <li>第3个li元素</li>   <!--并不会变为pink色-->
+       <li>第4个li元素</li>
+       <li>第5个li元素</li>
+       <li>第6个li元素</li>
+       <li>第7个li元素</li>
+       <li>第8个li元素</li>
+       <li>第9个li元素</li>
+     </ul>
   </body>
 </html>
