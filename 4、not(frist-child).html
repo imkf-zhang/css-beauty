@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+      /* :not(:first-child) :not(:last-child) 伪类选择器  */
+
+    /* 除去第一个li元素之外的，其他元素 */
+    .li-ele>li:not(:first-child) {    
+      color: blue;
+    }
+    /* 除去最后一个li元素之外的，其他元素 */
+    .li-my-ele>:not(:last-child) {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+  <ul class="li-ele">
+    <li>第1个li元素</li>
+    <li>第2个li元素</li>
+    <li>第3个li元素</li>
+    <li>第4个li元素</li>
+    <li>第5个li元素</li>
+    <li>第6个li元素</li>
+    <li>第7个li元素</li>
+    <li>第8个li元素</li>
+    <li>第9个li元素</li>
+  </ul>
+  <ul class="li-my-ele">
+    <li>我是第1个li元素</li>
+    <li>我是第2个li元素</li>
+    <li>我是第3个li元素</li>
+    <li>我是第4个li元素</li>
+    <li>我是第5个li元素</li>
+    <li>我是第6个li元素</li>
+    <li>我是第7个li元素</li>
+    <li>我是第8个li元素</li>
+    <li>我是第9个li元素</li>
+  </ul>
+</body>
+</html>
