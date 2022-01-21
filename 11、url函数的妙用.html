@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* CSS 数据类型 <url> 指向一个资源。它没有独有的表达形式，只能通过 url() 函数定义。 */
+
+    /* URL 可以使用单引号或双引号包含，也可以直接书写。
+    可以在此函数中使用相对地址。相对地址相对于 CSS 样式表的 URL（而不是网页的 URL）。 */
+
+    /* url内部加不加引号都是有效的 */
+    .container {
+      width: 100px;
+      height: 100px;
+      /* background: url("./static/changjin.png"); */
+      background: url(./static/changjin.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    /* 补充： */
+    /* css中还有一个函数，也是经常和background在一起用  rgb  和  rgba  这就不做说明了，经常用 */
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  </div>
+</body>
+</html>

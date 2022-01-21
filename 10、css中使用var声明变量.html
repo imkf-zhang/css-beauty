@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* :root 这个 CSS 伪类匹配文档树的根元素。对于 HTML 来说，
+    :root 表示 <html> 元素，除了优先级更高之外，与 html 选择器相同。 */
+
+    /* 在声明全局 CSS 变量时 :root 会很有用： */
+    :root {
+      --margin-bg-color: red;
+    }
+    .container {
+      width: 200px;
+      height: 200px;
+      background-color: var(--margin-bg-color);   /*变为了红色  less 和scss在全局声明的变量就是利用了此原理*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+</body>
+</html>

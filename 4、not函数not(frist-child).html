@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-
-      /* :not(:first-child) :not(:last-child) 伪类选择器  */
+    /* :not() 函数用于将样式应用于没有特定类或 ID 的特定元素  */
+      
+    /* :first-child :last-child 伪类选择器  */
 
     /* 除去第一个li元素之外的，其他元素 */
     .li-ele>li:not(:first-child) {    
       color: blue;
     }
     /* 除去最后一个li元素之外的，其他元素 */
-    .li-my-ele>:not(:last-child) {
+    .li-my-ele>li:not(:last-child) {
       color: pink;
     }
   </style>
