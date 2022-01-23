@@ -5,8 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .parsern {
+      font-size: 2em;
+      color: red;
+    }
+    .son {
+      font-size: 2em;
+      color: rosybrown;
+    }
+    .son2 {
+      font-size: 2em;
+      color: rosybrown;
+    }
+
+    .pingji {
+      font-size: 64px;
+      color: sandybrown;
+    }
+
+
+    .container {
+      width: 5em;
+      height: 5em;
+      background-color: sandybrown;
+    }
+    .container1 {
+      width: 5em;
+      height: 5em;
+      background-color: rgb(46, 40, 35);
+    }
+  </style>
 </head>
 <body>
-   <div>一行白鹭</div>
+   
+   <!-- 什么是1em --> <!--  em是一个相对的度量单位  对于浏览器来说 1em=16px。16px是浏览器默认字体大小 -->
+   <!-- em单位为一个相对的度量单位，它通过寻找父标签的font-size。然后通过计算得出自身的font-size（注意行内元素和块级元素的不同）。但是注意下面的span和p标签： -->
+   <p class="parsern">一行白鹭上青天 <!--30px-->
+     <span class="son">
+       两个黄鹂鸣翠柳   <!--64px-->
+     </span>
+     <div style="font-size: 2em;">一行白鹭上青天</div>  
+     <p class="son2">
+      两个黄鹂鸣翠柳   <!-- 32px-->
+     </p>
+   </p>
+   
+   <p class="pingji">
+     门泊东吴万里船 <!--64px-->
+   </p>
+
+
+   <div class="container"></div>
+   <div class="container1"></div>
 </body>
 </html>
