@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parson {
+        color: red;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .son {
+        margin: 5px;
+        color: burlywood;
+        border: 1px solid black;
+      }
+      .unset {
+        color: unset; /**本来就是继承的，所以接着继承*/
+        border: unset; /**本来就不是继承的，所以接着不继承*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 经常会碰到，问一个 CSS 属性，例如 position 有多少取值。 通常的回答是
+    static、relative、absolute 和 fixed 。 当然，还有一个极少人了解的 sticky。 -->
+    
+    <!-- 其实，除此之外， CSS 属性通常还可以设置下面几个值：
+     initial  默认
+     inherit  继承
+     unset    不设置
+     revert -->
+
+     <!-- 了解 CSS 样式的 initial（默认）和 inherit（继承）以及 unset 是熟练使用 CSS 的关键。
+      （当然由于 revert 未列入规范，本文暂且不过多提及。） -->
+
+
+    <!-- initial
+    initial 关键字用于设置 CSS 属性为它的默认值，可作用于任何 CSS 样式。（IE 不支持该关键字） -->
+
+
+    <!-- inherit
+    每一个 CSS 属性都有一个特性就是，这个属性必然是默认继承的 (inherited: Yes) 
+    或者是默认不继承的 (inherited: no)其中之一，
+    我们可以在 MDN 上通过这个索引查找，判断一个属性的是否继承特性。
+    合理的运用 inherit 可以让我们的 CSS 代码更加符合 DRY（Don‘’t Repeat Yourself ）原则
+  -->
+     <!-- 可继承属性
+     最后罗列一下默认为 inherited: Yes 的属性：
+     
+     所有元素可继承：visibility 和 cursor
+     内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、 font-family、
+     font-size、font-style、font-variant、font-weight、text- decoration、text-transform、direction
+     块状元素可继承：text-indent和text-align
+     列表元素可继承：list-style、list-style-type、list-style-position、list-style-image
+     表格元素可继承：border-collapse -->
+
+  
+  
+      <!-- unset
+    名如其意，unset 关键字我们可以简单理解为不设置。其实，它是关键字 initial 和 inherit 的组合。
+
+    什么意思呢？也就是当我们给一个 CSS 属性设置了 unset 的话：
+
+    如果该属性是默认继承属性，该值等同于 inherit
+    如果该属性是非继承属性，该值等同于 initial
+    举个例子，根据上面列举的 CSS 中默认继承父级样式的属性，选取一个，再选取一个不可继承样式：
+
+    选取一个可继承样式: color
+    选取一个不可继承样式: border -->
+
+    <!-- 使用 unset 继承/取消样式 -->
+ 
+    <div class="parson">
+      <div class="son">子元素1</div>
+      <div class="son unset">子元素<2/div>
+    </div>
+  </body>
+</html>
