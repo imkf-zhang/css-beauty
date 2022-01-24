@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 一、第一种是将块元素的两个子元素都设置成inline-block行内块元素，
+    一个元素高度等于父元素的高度，使得两个元素基点相互居中。
+    最后再把等于父元素高度的子元素隐藏起来，另外一个子元素就水平垂直居中了。 */
+    .box{width:500px;height:500px;box-shadow:0 0 5px #000;text-align:center;font-size:0;}
+    .zi{width:160px;height:100px;background:#0f0;display:inline-block;vertical-align:middle;}
+    .box:after{content:"";display:inline-block;height:100%;background:#f00;vertical-align:middle;}
+    </style>
+</head>
+<body>
+    <body>
+    <div class="box">
+      <div class="zi"></div>
+    </div>
+    
+</body>
+</html>
