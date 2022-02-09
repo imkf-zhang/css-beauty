@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSStransform属性允许你旋转，缩放，倾斜或平移给定元素。这是通过修改CSS视觉格式化模型的坐标空间来实现的。 */
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+      }
+      :not(div:nth-child(1)) {
+        margin-top: 20px;
+      }
+
+      .class1 {
+        transform: matrix(1, 2, 3, 4, 5, 6); /**矩阵的用法*/
+      }
+      .class2 {
+        transform: translate(120px, 50%); /*transform: translateX(2em);   transform: translateY(3in);*/
+      }
+      .class3 {
+        transform: translate3d(120px, 50%, 200px);
+      }
+      .class4 {
+        transform: scale(0.5,0.5);  /**scale()函数可以放大缩小函数  scale(sx, sy)  在x和y上的分别缩放比例  transform: scaleX(2); transform: scaleY(0.5);*/  
+      }
+      .class5 {
+        transform: rotate(0.5turn);  /*transform: rotate3d(1, 2.0, 3.0, 10deg); transform: rotateX(10deg); transform: rotateY(10deg); transform: rotateZ(10deg)*/
+      }
+      .class6 {
+        transform: scale(0.5) translate(-100%, -100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class1">这是第1个div元素</div>
+    <div class="class2">这是第2个div元素</div>
+    <div class="class3">这是第3个div元素</div>
+    <div class="class4">这是第4个div元素</div>
+    <div class="class5">这是第5个div元素</div>
+    <div class="class6">这是第6个div元素</div>
+  </body>
+</html>
