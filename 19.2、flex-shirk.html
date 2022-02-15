@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS flex-shrink 属性指定了 flex 元素的收缩规则。
+    flex 元素仅在默认宽度之和大于容器的时候才会发生收缩，
+    其收缩的大小是依据 flex-shrink 的值。 */
+      .parent {
+        display: flex;
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        background-color: antiquewhite;
+      }
+      .son1 {
+        width: 100px;
+        background-color: aqua;
+      }
+      .son2 {
+        flex-shrink: 2;
+        width: 200px; /* 200 - 40 == 160*/
+        background-color: aquamarine;  /* 100 / 5 == 20*/
+      }
+      .son3 {
+        flex-shrink: 3;
+        width: 300px; /* 300 - 60== 240*/
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="son1">1</div>
+      <div class="son2">2</div>
+      <div class="son3">3</div>
+    </div>
+  </body>
+</html>
